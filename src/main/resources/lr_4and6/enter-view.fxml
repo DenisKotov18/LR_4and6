@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lr_4and6.controllers.AuthorizationController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="69.0" stroke="#080808" strokeType="INSIDE" width="654.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="159.0" layoutY="-6.0" text="Авторизация">
+         <font>
+            <Font name="Segoe Script" size="44.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="227.0" layoutY="119.0" prefHeight="249.0" prefWidth="200.0" style="-fx-background-color: gray;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <AnchorPane layoutX="12.0" layoutY="82.0" prefHeight="221.0" prefWidth="175.0" style="-fx-background-color: silver;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <TextField fx:id="login_field" layoutX="23.0" layoutY="47.0" onMouseClicked="#eraseEvent" promptText="Login" />
+                  <PasswordField fx:id="password_field" layoutX="23.0" layoutY="97.0" onMouseClicked="#eraseEvent" promptText="Password" />
+                  <Button fx:id="enter_button" alignment="CENTER" layoutX="66.0" layoutY="157.0" mnemonicParsing="false" text="Войти" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="register_button" alignment="CENTER" layoutX="42.0" layoutY="200.0" mnemonicParsing="false" onMouseEntered="#pre_click" onMouseExited="#canselClick" style="-fx-background-color: silver;" text="Регистрация " underline="true">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="wrong_label" alignment="CENTER" layoutX="21.0" layoutY="130.0" prefHeight="20.0" prefWidth="150.0" text="Неверный логин/пароль!" textFill="RED" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

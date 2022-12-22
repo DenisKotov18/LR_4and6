@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lr_4and6.controllers.OrderController">
+    <children>
+        <AnchorPane prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="240.0" layoutY="11.0" text="Заказать">
+               <font>
+                  <Font name="Segoe Script" size="22.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+        <Button fx:id="bascket_button" layoutX="514.0" layoutY="360.0" mnemonicParsing="false" text="В корзину" />
+      <AnchorPane layoutX="35.0" layoutY="70.0" prefHeight="130.0" prefWidth="200.0" />
+      <AnchorPane layoutX="61.0" layoutY="80.0" onMouseClicked="#appleAction" prefHeight="116.0" prefWidth="184.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="188.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/apple.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="93.0" text="Яблоко 1$" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="366.0" layoutY="80.0" onMouseClicked="#cakeAction" prefHeight="116.0" prefWidth="184.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="192.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/cake.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="46.0" layoutY="93.0" text="Кусочек тортика 5$" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="61.0" layoutY="226.0" onMouseClicked="#coffeeAction" prefHeight="116.0" prefWidth="192.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="192.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/coffee.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="74.0" layoutY="93.0" text="Кофе 3$" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <AnchorPane layoutX="366.0" layoutY="226.0" onMouseClicked="#teaAction" prefHeight="116.0" prefWidth="184.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="184.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/tea.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="94.0" text="Чай 3$" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+      <Button fx:id="ExitButton1" layoutX="37.0" layoutY="360.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>

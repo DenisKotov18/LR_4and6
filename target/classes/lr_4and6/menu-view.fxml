@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="654.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lr_4and6.controllers.MenuController">
+    <children>
+        <AnchorPane layoutY="32.0" prefHeight="66.0" prefWidth="654.0" style="-fx-background-color: gray;">
+         <children>
+            <Label layoutX="141.0" layoutY="2.0" text="Добро пожаловать!">
+               <font>
+                  <Font name="Segoe Script" size="34.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <VBox alignment="CENTER" layoutX="1.0" layoutY="97.0" prefHeight="338.0" prefWidth="654.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="order_btn" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Заказать">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="my_order_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Мои заказы">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit_btn" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" text="Выход">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
